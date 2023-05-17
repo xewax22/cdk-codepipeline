@@ -10,7 +10,7 @@ export class CdkCodepipelineStack extends cdk.Stack {
     // The code that defines your stack goes here
     const cicdpipeline = new CodePipeline(this, 'cicdpipeline',{
       synth: new ShellStep('Synth', {
-        input: CodePipelineSource.gitHub('xewax/cdk-codepipeline','main'),
+        input: CodePipelineSource.gitHub('xewax22/cdk-codepipeline','main'),
         commands: ['npm ci','npm run build','npx cdk synth'],
       }),
     } )
