@@ -3,7 +3,7 @@ name: Sync to AWS CodeCommit
 on:
   push:
     branches:
-      - master
+      - main
 
 jobs:
   sync:
@@ -24,4 +24,4 @@ jobs:
         git config --global credential.helper '!aws codecommit credential-helper $@'
         git config --global credential.UseHttpPath true
         git remote add codecommit https://git-codecommit.us-west-2.amazonaws.com/v1/repos/repo-927440400244  # remplaza con tu URL de repositorio
-        git push codecommit master
+        git push codecommit main
