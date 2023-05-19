@@ -23,5 +23,5 @@ jobs:
       run: |
         git config --global credential.helper '!aws codecommit credential-helper $@'
         git config --global credential.UseHttpPath true
-        git remote add codecommit https://git-codecommit.us-west-2.amazonaws.com/v1/repos/my-repo  # remplaza con tu URL de repositorio
+        git remote add codecommit https://git-codecommit.us-west-2.amazonaws.com/v1/repos/repo-927440400244  # remplaza con tu URL de repositorio
         git push codecommit master
